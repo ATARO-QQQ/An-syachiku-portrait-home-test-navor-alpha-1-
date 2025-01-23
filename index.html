@@ -274,22 +274,22 @@
             margin-top: 40px;
         }
 
-        .article-box .box {
-            width: 23%; /* 4個並べる */
-            background-color: white;
-            border: 2px solid #2a2a2a;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-            aspect-ratio: 3 / 4; /* 3:4のアスペクト比 */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
-            transition: box-shadow 0.3s ease; /* 影のスムーズな変化 */
-        }
+    .article-box .box {
+        width: 23%; /* 高解像度で4個並べる */
+        background-color: white;
+        border: 2px solid #2a2a2a;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        aspect-ratio: 3 / 4; /* アスペクト比 */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 濃い影 */
+        transition: box-shadow 0.3s ease;
+    }
 
-        .article-box .box:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* ホバー時に影を強調 */
-        }
+    .article-box .box:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* ホバー時さらに強調 */
+    }
 
         .article-box .box img {
             width: 100%;
@@ -298,54 +298,54 @@
             aspect-ratio: 4 / 3; /* 画像は4:3のアスペクト比 */
         }
 
-        .article-box .box .title {
-            text-align: center;
-            background-color: #2a2a2a;
-            color: white;
-            padding: 10px;
-            font-size: 1.2rem;
-        }
+    .article-box .box .title {
+        text-align: center;
+        background-color: #2a2a2a;
+        color: white;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
 
-        .article-box .box .summary {
-            background-color: #2a2a2a;
-            color: white;
-            padding: 10px;
-            font-size: 1rem;
-            text-align: center;
-            padding-bottom: 40px; /* 黒い部分が下までぴったり */
-        }
+    .article-box .box .date {
+        text-align: center;
+        background-color: #2a2a2a;
+        color: white;
+        padding: 5px;
+        font-size: 0.9rem;
+    }
 
-        .article-box .box .date {
-            text-align: center;
-            background-color: #2a2a2a;
-            color: white;
-            padding: 5px 10px;
-            font-size: 0.9rem;
-        }
+    .article-box .box .summary {
+        background-color: #2a2a2a;
+        color: white;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 40px; /* 黒い部分が下までぴったり */
+    }
+
 
         .article-box .box .title + .summary {
             border-top: 2px solid #2a2a2a;
         }
 
-        /* レスポンシブ調整 */
-        @media (max-width: 768px) {
-            .article-box .box {
-                width: 30%; /* タブレットでは3個並べる */
-            }
+    /* レスポンシブ調整 */
+    @media (max-width: 768px) {
+        .article-box .box {
+            width: 30%; /* タブレットで3個並べる */
         }
+    }
 
-        @media (max-width: 480px) {
-            .article-box .box {
-                width: 100%; /* スマホでは縦並び */
-            }
+    @media (max-width: 480px) {
+        .article-box .box {
+            width: 100%; /* スマホで縦並び */
         }
+    }
 
-        @media (min-width: 1201px) {
-            .article-box .box {
-                width: 23%; /* 高解像度デバイスでも4個並べる */
-            }
+    @media (min-width: 1201px) {
+        .article-box .box {
+            width: 23%; /* 高解像度で4個並べる */
         }
-
+    }
 
         /* フッター */
         footer {
@@ -467,26 +467,26 @@
             <section class="article-box">
                 <div class="box">
                     <img src="適当画像 2025 01 25.png" alt="記事画像1">
-                    <div class="title">記事タイトル1</div>
-                    <div class="summary">記事の概要です。記事の内容が少し紹介されます。</div>
+                    <div class="title">「売れる絵」と「良い絵」</div>
+                    <div class="summary">売れる絵を描く人と、良い絵を描く人。どちらも、「うまい」んです。でも、うまさのベクトルが違うんですねぇ…。</div>
                     <div class="date">2025年1月22日</div>
                 </div>
                 <div class="box">
                     <img src="適当画像 2025 01 24.png" alt="記事画像2">
-                    <div class="title">記事タイトル2</div>
-                    <div class="summary">記事の概要です。記事の内容が少し紹介されます。</div>
+                    <div class="title">まんまと乗っかるオタクたち</div>
+                    <div class="summary">利用されていないつもりでも、業者に丸め込まれている、なんてことはよくあることです。</div>
                     <div class="date">2025年1月21日</div>
                 </div>
                 <div class="box">
                     <img src="適当画像 2025 01 25.png" alt="記事画像3">
-                    <div class="title">記事タイトル3</div>
-                    <div class="summary">記事の概要です。記事の内容が少し紹介されます。</div>
+                    <div class="title">空腹は最高の銭函</div>
+                    <div class="summary">生活にかかわることがビジネスチャンスにつながるのは、至極当たり前である…というお話です。</div>
                     <div class="date">2025年1月20日</div>
                 </div>
                 <div class="box">
                     <img src="適当画像 2025 01 24.png" alt="記事画像4">
-                    <div class="title">記事タイトル4</div>
-                    <div class="summary">記事の概要です。記事の内容が少し紹介されます。</div>
+                    <div class="title">進捗? いいわけねぇだろ!!</div>
+                    <div class="summary">焦りって人を変えてしまいますよね。それをうまく利用してみましょう!!</div>
                     <div class="date">2025年1月19日</div>
                 </div>
             </section>
